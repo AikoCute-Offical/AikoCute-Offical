@@ -16,11 +16,11 @@ const aiko = {
   code: [Javascript, HTML, CSS, Python, Java],
   tools: [Docker, Backend, terminal Linux, SEToolkit, Mestaploit frameword],
   Foreign Language: ["English", "Japanese", "vietnamese"],
-  tool used a lot when working : {
-                                    GithubDesktop: "save code and project"
-                                    googledrive: "save necessary documents",
-                                    VisualStudioCode: "used to code any language"
-                                },
+  tool:{
+          GithubDesktop: "save code and project"
+          googledrive: "save necessary documents",
+          VisualStudioCode: "used to code any language"
+        }
  challenge: "I'm focusing on doing something to make myself less harmful!"
 }
 ```
