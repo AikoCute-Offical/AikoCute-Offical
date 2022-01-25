@@ -3,8 +3,8 @@
 <p><em>Student at <a href="https://qnu.edu.vn/">Quy Nhon University</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Developer at <a href="https://aikocute.com">AikoCute</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 
-[![](https://img.shields.io/badge/My Zalo-@AikoCuteZalo-blue.svg)](https://zalo.me/g/tkhoxp474)
-[![](https://img.shields.io/badge/My Tele-@AikocuteTele-blue.svg)](https://t.me/AikoCute_Player)
+[![](https://img.shields.io/badge/MyZalo-@AikoCuteZalo-blue.svg)](https://zalo.me/g/tkhoxp474)
+[![](https://img.shields.io/badge/MyTele-@AikocuteTele-blue.svg)](https://t.me/AikoCute_Player)
 
 
 
