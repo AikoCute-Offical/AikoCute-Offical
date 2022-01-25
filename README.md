@@ -12,7 +12,7 @@
 
 ```javascript
 const aiko = {
-  pronouns: "Active",
+  Adjective: "Active",
   code: [Javascript, HTML, CSS, Python, Java],
   tools: [Docker, Backend, terminal Linux, SEToolkit, Mestaploit frameword],
   Foreign Language: ["English", "Japanese", "vietnamese"],
