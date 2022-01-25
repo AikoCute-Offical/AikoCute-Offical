@@ -11,16 +11,16 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
 ```javascript
-const thai = {
+const aiko = {
   pronouns: "Active",
   code: [Javascript, HTML, CSS, Python, Java],
   tools: [Docker, Backend, terminal Linux, SEToolkit, Mestaploit frameword],
   Foreign Language: ["English", "Japanese", "vietnamese"],
-  Most used tool: {
-                        Github: ["AikoCute"](https://github.com/AikoCute),
-                        speaker: "AikoCute",
-                        mentor: "AikoCute"
-                      },
+  tool used a lot when working : {
+                                    Github Desktop: "save code and project"
+                                    google drive: "save necessary documents",
+                                    Visual Studio Code: "used to code any language"
+                                },
  challenge: "I'm focusing on doing something to make myself less harmful!"
 }
 ```
