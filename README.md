@@ -12,16 +12,16 @@
 
 ```javascript
 const thai = {
-  pronouns: "she" | "her",
-  code: [Javascript, Typescript, HTML, CSS, Ruby, Python, Java],
-  tools: [React, Redux, Node, Storybook, Styled-Components, Jest, Docker],
-  architecture: ["microservices", "event-driven", "design system pattern"],
-  techCommunities: {
-                        coorganizer: "AfroPython",
-                        speaker: "Latinity",
-                        mentor: "EducaTRANSforma"
+  pronouns: "Active",
+  code: [Javascript, HTML, CSS, Python, Java],
+  tools: [Docker, Backend, terminal Linux, SEToolkit, Mestaploit frameword],
+  Foreign Language: ["English", "Japanese", "vietnamese"],
+  Most used tool: {
+                        Github: ["AikoCute"](https://github.com/AikoCute),
+                        speaker: "AikoCute",
+                        mentor: "AikoCute"
                       },
- challenge: "I am doing the #100DaysOfCode challenge focused on react and typescript"
+ challenge: "I'm focusing on doing something to make myself less harmful!"
 }
 ```
 
