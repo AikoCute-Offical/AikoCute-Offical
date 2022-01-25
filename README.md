@@ -1,5 +1,5 @@
 <h2> Hi, I'm Aiko! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
-<img align='right' src="https://media.giphy.com/media/ieyl9zmCjO4b4t6qoY/giphy.gif" width="230">
+<img align='right' src="https://media2.giphy.com/media/XdUr7e0X1Kjeg/giphy.gif?cid=ecf05e47lt5b12equ4az5y3o4pbhvql2w6fednpsp7dp46n9&rid=giphy.gif&ct=g" width="230">
 <p><em>Student at <a href="https://qnu.edu.vn/">Quy Nhon University</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Developer at <a href="https://aikocute.com">AikoCute</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 
@@ -17,9 +17,9 @@ const aiko = {
   tools: [Docker, Backend, terminal Linux, SEToolkit, Mestaploit frameword],
   Foreign Language: ["English", "Japanese", "vietnamese"],
   tool used a lot when working : {
-                                    Github Desktop: "save code and project"
-                                    google drive: "save necessary documents",
-                                    Visual Studio Code: "used to code any language"
+                                    GithubDesktop: "save code and project"
+                                    googledrive: "save necessary documents",
+                                    VisualStudioCode: "used to code any language"
                                 },
  challenge: "I'm focusing on doing something to make myself less harmful!"
 }
