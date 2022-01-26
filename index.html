@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class='v2' dir='ltr' lang='vi' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-	<script type="text/javascript" src="https://itexpress.vn/js/noel_black.js"></script>
+
+	<script type="text/javascript" src="js/noel_black.js"></script>
 	<link href='img/AikoIcon.ico' rel='shortcut icon' type='image/x-icon'/>
     <head>
 		<title>Aiko</title>
@@ -36,6 +37,7 @@
     loadCSS("//cdn.jsdelivr.net/gh/leanhducprovn/cdn/font-awesome/pro-5.15.3/css/all.css");
     //]]>
   </script>
+
 <style type='text/css'>
   /* Trỏ chuột */
   html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
@@ -82,8 +84,41 @@ del{opacity:0.6}
 @media(max-width:767px){.wrap{margin-top:15px;margin-bottom:10px;margin-left:10px;margin-right:10px}}
 @media(min-width:767px){.left-panel .sticky{position:-webkit-sticky;position:sticky;top:30px}.left-panel{margin-right:2rem}}
 
+/* html {
+	background-color:rgba(0, 0, 0, 0.12)
+} */
+.dark-mode {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(65, 65, 65);
+}
+
+
+.toggle-theme {
+	width: 100px; height: 100px;
+	position: absolute;
+	bottom: 50px; left: 50px;
+	z-index: 999999999;
+	background-image: url("./img/toggle-icon-off.jpg");
+	background-size: cover;
+
+}
+
+.on-dark {
+	background-image: url("./img/toggle-icon-on.jpg") !important
+}
+
+
 </style>
+<div class='theme'></div>
+<div class="toggle-theme"></div>
+
 	</head>
+	 
 	<!-- Bắt đầu phần hiển thị -->
 	<body> 
 		<div class='wrap'>
@@ -239,6 +274,8 @@ del{opacity:0.6}
 </head>-->
 	<!--<body>
 </body>-->
+<script type="text/javascript" src="./js/main.js"></script>
+
 	</body>
 	<!-- Kết thúc phần hiển thị -->
 </html>
