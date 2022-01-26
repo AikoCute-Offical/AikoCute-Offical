@@ -1,100 +1,20 @@
 <!DOCTYPE html>
 <html class='v2' dir='ltr' lang='vi' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 	<link href='img/AikoIcon.ico' rel='shortcut icon' type='image/x-icon'/>
-	<div class="snowflakes" aria-hidden="true">
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-		<div class="snowflake">❅</div>
-		<div class="snowflake">❆</div>
-	  </div>
-	
+	<style>
+		#snowflakeContainer{position:absolute;left:0px;top:0px;}
+		.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+		.snowflake:hover {cursor:default}
+	</style>
+	<div id='snowflakeContainer'>
+	<p class='snowflake'>❄</p>
+	</div>
+	<script style='text/javascript'>
+		//<![CDATA[
+		var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+		//]]>
+	</script>
 
-	  <style>
-		@-webkit-keyframes snowflakes-fall {
-		  0% {top:-10%}
-		  100% {top:100%}
-		}
-		@-webkit-keyframes snowflakes-shake {
-		  0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
-		  50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
-		}
-		@keyframes snowflakes-fall {
-		  0% {top:-10%}
-		  100% {top:100%}
-		}
-		@keyframes snowflakes-shake {
-		  0%,100%{ transform:translateX(0)}
-		  50% {transform:translateX(80px)}
-		}
-		.snowflake {
-		  color: #fff;
-		  font-size: 1em;
-		  font-family: Arial, sans-serif;
-		  text-shadow: 0 0 5px #000;
-		  position:fixed;
-		  top:-10%;
-		  z-index:9999;
-		  -webkit-user-select:none;
-		  -moz-user-select:none;
-		  -ms-user-select:none;
-		  user-select:none;
-		  cursor:default;
-		  -webkit-animation-name:snowflakes-fall,snowflakes-shake;
-		  -webkit-animation-duration:10s,3s;
-		  -webkit-animation-timing-function:linear,ease-in-out;
-		  -webkit-animation-iteration-count:infinite,infinite;
-		  -webkit-animation-play-state:running,running;
-		  animation-name:snowflakes-fall,snowflakes-shake;
-		  animation-duration:10s,3s;
-		  animation-timing-function:linear,ease-in-out;
-		  animation-iteration-count:infinite,infinite;
-		  animation-play-state:running,running;
-		}
-		.snowflake:nth-of-type(0){
-		  left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
-		}
-		.snowflake:nth-of-type(1){
-		  left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
-		}
-		.snowflake:nth-of-type(2){
-		  left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
-		}
-		.snowflake:nth-of-type(3){
-		  left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
-		}
-		.snowflake:nth-of-type(4){
-		  left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
-		}
-		.snowflake:nth-of-type(5){
-		  left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
-		}
-		.snowflake:nth-of-type(6){
-		  left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
-		}
-		.snowflake:nth-of-type(7){
-		  left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
-		}
-		.snowflake:nth-of-type(8){
-		  left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
-		}
-		.snowflake:nth-of-type(9){
-		  left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
-		}
-		.snowflake:nth-of-type(10){
-		  left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
-		}
-		.snowflake:nth-of-type(11){
-		  left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
-		}
-	  </style>
     <head>
 		<title>Aiko</title>
 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
@@ -130,77 +50,17 @@
     //]]>
   </script>
 <style type='text/css'>
-    /* dark mode */
-   
-    /* Trỏ chuột */
+  /*----------------------------------*/
+  /* Name: code.pro.vn                */
+  /* Admin: Lê Anh Đức                */
+  /* Phone: 0386 897 757              */
+  /* Gmail: leanhduc.pro.vn@gmail.com */
+  /* Website: https://code.pro.vn     */
+  /*----------------------------------*/
+
+  /* Trỏ chuột */
   html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
   a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
-
-  /* Thông báo */
-  #thbao {padding: 0 0 10px 0;/*border-bottom: 1px solid #e6dac3;*/}
-  #thbao-margin {margin: 0 auto;}
-  .thbao-container {width: auto;border: 1px dashed #f2b768;border-radius: 8px;padding: 4px;font-size: 90%;}
-  .thbao-header {background: #ff6734;color: white;border: 0 solid #ffa789;border-radius: 8px 0 0 8px;padding: 5px 10px;white-space: nowrap;}
-  .thbao-body {background: #fae9c8;padding: 5px 10px;border-radius: 0 8px 8px 0;width: auto;}
-  .thbao-close {float: right;margin-right: -5px;}
-
-  /* Rung rinh */
-  .rung {animation: rung-lac 2s ease infinite;}
-  @-webkit-keyframes rung-lac {0% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
-  10% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
-  20% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
-  30% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
-  40% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
-  50% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
-  100% {-webkit-transform: rotate(0) scale(1) skew(1deg);}}
-
-  /* Nhấp nháy */
-  .nhap-nhay {animation: flicker 4s linear infinite;}
-  @keyframes flicker {
-  0% {opacity:0.1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
-  2% {opacity:1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
-  8% {opacity:0.1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
-  9% {opacity:1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
-  12% {opacity:0.1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  20% {opacity:1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  25% {opacity:0.3;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  30% {opacity:1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  70% {opacity:0.7;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  72% {opacity:0.2;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  77% {opacity:0.9;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
-  100% {opacity:0.9;text-shadow: 0px 0px rgba(242, 22, 22, 1);}}
-
-  /* Tuyên bố bản quyền */
-  .dmca-sample{font-size:9px;color:rgba(254,254,254,.6);border-radius:3px;overflow:hidden}
-  .dmca-sample:before{content:'DMCA';padding:5px 10px;background-color:#2a2a2a;border-radius: 3px 0 0 3px}
-  .dmca-sample:after{content:'Protected';color:#202442;padding:5px 10px;background-color:#c5c5c5;border-radius: 0 3px 3px 0}
-
-  /* Bình luận gần đây */
-  ul.idbcomments{list-style:none;margin:0;padding:0}
-  .idbcomments li{margin:8px 0 0;padding:5px 0 5px 5px;display:block;clear:both;overflow:hidden;list-style:none;border: 1px solid #eee;border-radius: 6px;}
-  /*.idbcomments li{display:block;clear:both;overflow:hidden;list-style:none;border-bottom:0!important;word-break:break-all;padding:8px 0!important}*/
-  .idbcomments li .avatarImage{float:left;margin-right:10px;position:relative;overflow:hidden}
-  .idbcomments li img{border-radius:100%;position:relative;overflow:hidden;display:block;width:42px;height:42px}
-  .idbcomments li a{font-weight:600;color:var(--body-color)}
-  .idbcomments li:hover{background:#F2F2F2;border: 1px solid #e9e9e9;}
-  .idbcomments a{color:var(--body-color)}
-  .idbcomments li span{margin-top:2px;color:#666;display:block;font-size:12px;line-height:1.4}
-  .darkMode .idbcomments li a{font-weight:600;color:var(--header-bg)}
-  .darkMode .idbcomments a{color:var(--content-border)}
-  .darkMode .idbcomments li span{margin-top:2px;color:var(--content-border);display:block;font-size:12px;line-height:1.4}
-  .darkMode .idbcomments li:hover{background:#353535;border: 1px solid #e9e9e9;}
-  .idbcomments .left {float:left;padding:8px 0 0 0;}
-  .idbcomments .right {float:right;padding:8px 0 0 0;}
-
-  /* Liên hệ quảng cáo */
-  .codepro-piki-ads{display:block;background-color:#F6F6F6;text-align:center;line-height:85px;font-size:13px;font-style:normal;font-weight:normal;color:#757575;border-radius:6px;}
-  .codepro-piki-ads-res{display:block;background-color:#F6F6F6;text-align:center;line-height:205px;font-size:13px;font-style:normal;font-weight:normal;color:#757575;border-radius:6px;}
-  .darkMode .codepro-piki-ads{display:block;background-color:#353535;text-align:center;line-height:85px;font-size:13px;font-style:normal;font-weight:normal;color:#FEFEFE;border-radius:6px;}
-  .darkMode .codepro-piki-ads-res{display:block;background-color:#353535;text-align:center;line-height:205px;font-size:13px;font-style:normal;font-weight:normal;color:#FEFEFE;border-radius:6px;}
-
-  /* light dark */
-  .headerIcon .navDark:hover:before{opacity:.7;/*padding-right:8px;padding-left:8px;right:26px*/padding-top:35px}header .headerIcon .navNight .svg-2, .darkMode .headerIcon .navNight .svg-1{display:none} .darkMode .headerIcon .navNight .svg-2{display:block}header .headerIcon .navNight:before{content:attr(data-text);font-size:11px;opacity:0;transition:var(--transition-2);-webkit-transition:var(--transition-2);white-space:nowrap; position:absolute;left:0}header .headerIcon .navNight:hover:before{opacity:.6;top: 20px} .darkMode .headerIcon .navNight:before{content:'Light'}
-
 
     body{font-family:'Inconsolata';width:100%;height:100%}
 .wrap{margin:0;height:auto;min-height:100vh;display:flex;align-items:center;justify-content:center;margin-top:30px;margin-bottom:20px}
@@ -260,10 +120,10 @@ del{opacity:0.6}
 <a href='#'>April 18th, 2001</a><i class='fas fa-birthday-cake'></i>
 </div>
 <div class='link'>
-<a href='https://goo.gl/maps/dTxc1RtYDfz3aj1u6' target='_blank'>Nhon Binh, Quy Nhon, Binh Dinh</a><i class='fas fa-map-marker-alt'></i>
+<a href='https://goo.gl/maps/araUhLAZZQ5f17GX7' target='_blank'>Nhon Binh, Quy Nhon, Binh Dinh</a><i class='fas fa-map-marker-alt'></i>
 </div>
 <div class='link'>
-<a href='https://www.facebook.com/hajimecute2001 target='_blank'>Dang Gia Thua</a><i class='fab fa-facebook-square'></i>
+<a href='https://www.facebook.com/hajimecute2001'target='_blank'>Dang Gia Thua</a><i class='fab fa-facebook-square'></i>
 </div>
 <div class='link'>
 <a href='https://github.com/AikoCute' target='_blank'>@AikoCute</a><i class='fab fa-github-square'></i>
