@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-	<div class="snowflakes" aria-hidden="true">
+<html class='v2' dir='ltr' lang='vi' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+	<link href='img/AikoIcon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <div class="snowflakes" aria-hidden="true">
 		<div class="snowflake">❅</div>
 		<div class="snowflake">❆</div>
 		<div class="snowflake">❅</div>
@@ -14,8 +15,8 @@
 		<div class="snowflake">❅</div>
 		<div class="snowflake">❆</div>
 	  </div>
-	  
-	  // CSS
+	
+
 	  <style>
 		@-webkit-keyframes snowflakes-fall {
 		  0% {top:-10%}
@@ -94,102 +95,310 @@
 		  left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
 		}
 	  </style>
-<head>
-	<link rel="icon" href="img/AikoIcon.ico">
-	<meta charset="UTF-8">
-	<title>AikoCute</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="sheet/bootstrap.css">
-	<link rel="stylesheet" href="sheet/ionicons.min.css">
-	<link rel="stylesheet" href="sheet/mine.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
-	<script src="javascript/myscript.js"></script>
-	<link rel="icon" href="img/AikoIcon.ico">
-</head>
+    <head>
+		<title>Aiko</title>
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<meta content='website' property='og:type'/>
+<meta content='Aiko' property='og:title'/>
+<meta content='Xây dựng và phát triển bởi Aiko!' property='og:description'/>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
 
-<body>
-	<div class="menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
-					<h3 class="py-3">About <span>Me</span></h3>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="container" style="margin-top: 116px;">
-		<div class="row">
-			<div class="col-11 mx-auto profile">
-				<div class="py-3 px-2 px-lg-4 py-lg-5">
+<link href='https://cdn.jsdelivr.net/gh/leanhducprovn/cdn/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet'/>
+<link href='https://cdn.jsdelivr.net/gh/leanhducprovn/cdn/font-awesome/pro-5.15.3/css/all.css' rel='stylesheet'/>
+<link href='https://cdn.jsdelivr.net/gh/leanhducprovn/cdn/bootstrap/5.1.1/css/bootstrap.min.css' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata:500,500i,600,600i,700,700i,800,800i,900,900i' rel='stylesheet'/>
 
-					<div class="row">
-						<div class="avatarBox col-12 col-lg-5">
-							<img src="https://avatars.githubusercontent.com/u/98416058?v=4" class="img-fluid">
-						</div>
+<!-- Bắt đầu css-->
+<script type='text/javascript'>
+    //<![CDATA[
+    function loadCSS(e, t, n) {
+      "use strict";
+      var i = window.document.createElement("link");
+      var o = t || window.document.getElementsByTagName("script")[0];
+      i.rel = "stylesheet";
+      i.href = e;
+      i.media = "only x";
+      o.parentNode.insertBefore(i, o);
+      setTimeout(function() {
+        i.media = n || "all"
+      })
+    }
+    loadCSS("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+    loadCSS("//cdn.jsdelivr.net/gh/leanhducprovn/cdn/font-awesome/pro-5.15.3/css/all.css");
+    //]]>
+  </script>
+<style type='text/css'>
+    /* dark mode */
+   
+    /* Trỏ chuột */
+  html,body{cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;}
+  a:hover{cursor:url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;}
 
-						<div class="infoBox col-12 col-lg-6 mt-2 mt-lg-0">
-							<p class="sayHi">Hello</p>
+  /* Thông báo */
+  #thbao {padding: 0 0 10px 0;/*border-bottom: 1px solid #e6dac3;*/}
+  #thbao-margin {margin: 0 auto;}
+  .thbao-container {width: auto;border: 1px dashed #f2b768;border-radius: 8px;padding: 4px;font-size: 90%;}
+  .thbao-header {background: #ff6734;color: white;border: 0 solid #ffa789;border-radius: 8px 0 0 8px;padding: 5px 10px;white-space: nowrap;}
+  .thbao-body {background: #fae9c8;padding: 5px 10px;border-radius: 0 8px 8px 0;width: auto;}
+  .thbao-close {float: right;margin-right: -5px;}
 
-							<div class="name">
-								<p><span>I'm</span> Aiko!</p>
-								<p class="s">Verified
-									<span class="ion-ios-checkmark-outline"></span>
-								</p>
-								<p><span class="ion-android-globe"></span> <a href=>AikoCute.com</a></p>
-							</div>
-							<hr>
+  /* Rung rinh */
+  .rung {animation: rung-lac 2s ease infinite;}
+  @-webkit-keyframes rung-lac {0% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
+  10% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
+  20% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
+  30% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
+  40% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
+  50% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
+  100% {-webkit-transform: rotate(0) scale(1) skew(1deg);}}
 
-							<div class="detailInfo">
-								<div class="row my-2">
-									<div class="col-lg-4 col-12 boldd">Name</div>
-									<div class="col-lg-8 col-12 b">Aiko</div>
-								</div>
-								<div class="row my-2">
-									<div class="col-lg-4 col-12 boldd">Company</div>
-									<div class="col-lg-8 col-12 b">AikoCuteHotMe</div>
-								</div>
-								<div class="row my-2">
-									<div class="col-lg-4 col-12 boldd">Jobs</div>
-									<div class="col-lg-8 col-12 b">Student</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-4 col-12 boldd">Age</div>
-									<div class="col-lg-8 col-12 b">Secret</div>
-								</div>
+  /* Nhấp nháy */
+  .nhap-nhay {animation: flicker 4s linear infinite;}
+  @keyframes flicker {
+  0% {opacity:0.1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
+  2% {opacity:1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
+  8% {opacity:0.1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
+  9% {opacity:1;text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);}
+  12% {opacity:0.1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  20% {opacity:1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  25% {opacity:0.3;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  30% {opacity:1;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  70% {opacity:0.7;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  72% {opacity:0.2;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  77% {opacity:0.9;text-shadow: 0px 0px rgba(242, 22, 22, 1);}
+  100% {opacity:0.9;text-shadow: 0px 0px rgba(242, 22, 22, 1);}}
 
-							</div>
-						</div>
-					</div>
+  /* Tuyên bố bản quyền */
+  .dmca-sample{font-size:9px;color:rgba(254,254,254,.6);border-radius:3px;overflow:hidden}
+  .dmca-sample:before{content:'DMCA';padding:5px 10px;background-color:#2a2a2a;border-radius: 3px 0 0 3px}
+  .dmca-sample:after{content:'Protected';color:#202442;padding:5px 10px;background-color:#c5c5c5;border-radius: 0 3px 3px 0}
 
-				</div>
-			</div>
-			<div class="col-11 mx-auto bg-danger contact text-center">
-				<div class="social col-12">
-					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-						<span class="ion-social-facebook mr-4 mr-lg-5"></span>
-					</a>
-					<span class="ion-social-instagram-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-whatsapp-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-skype-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-twitter-outline mr-4 mr-lg-5 ml-lg-3"></span>
-					<span class="ion-social-linkedin-outline ml-lg-3"></span>
-				</div>
-			</div>
-		</div>
-	</div>
+  /* Bình luận gần đây */
+  ul.idbcomments{list-style:none;margin:0;padding:0}
+  .idbcomments li{margin:8px 0 0;padding:5px 0 5px 5px;display:block;clear:both;overflow:hidden;list-style:none;border: 1px solid #eee;border-radius: 6px;}
+  /*.idbcomments li{display:block;clear:both;overflow:hidden;list-style:none;border-bottom:0!important;word-break:break-all;padding:8px 0!important}*/
+  .idbcomments li .avatarImage{float:left;margin-right:10px;position:relative;overflow:hidden}
+  .idbcomments li img{border-radius:100%;position:relative;overflow:hidden;display:block;width:42px;height:42px}
+  .idbcomments li a{font-weight:600;color:var(--body-color)}
+  .idbcomments li:hover{background:#F2F2F2;border: 1px solid #e9e9e9;}
+  .idbcomments a{color:var(--body-color)}
+  .idbcomments li span{margin-top:2px;color:#666;display:block;font-size:12px;line-height:1.4}
+  .darkMode .idbcomments li a{font-weight:600;color:var(--header-bg)}
+  .darkMode .idbcomments a{color:var(--content-border)}
+  .darkMode .idbcomments li span{margin-top:2px;color:var(--content-border);display:block;font-size:12px;line-height:1.4}
+  .darkMode .idbcomments li:hover{background:#353535;border: 1px solid #e9e9e9;}
+  .idbcomments .left {float:left;padding:8px 0 0 0;}
+  .idbcomments .right {float:right;padding:8px 0 0 0;}
 
-</body>
-<footer>
-	<div class="container-fluid mt-2">
-		<div class="row">
-			<div class="col-11 text-right">
-				<p class="AikoCute">
-					<a href="https://aikocute.com"></a>
-				</p>
-			</div>
-		</div>
-	</div>
-</footer>
+  /* Liên hệ quảng cáo */
+  .codepro-piki-ads{display:block;background-color:#F6F6F6;text-align:center;line-height:85px;font-size:13px;font-style:normal;font-weight:normal;color:#757575;border-radius:6px;}
+  .codepro-piki-ads-res{display:block;background-color:#F6F6F6;text-align:center;line-height:205px;font-size:13px;font-style:normal;font-weight:normal;color:#757575;border-radius:6px;}
+  .darkMode .codepro-piki-ads{display:block;background-color:#353535;text-align:center;line-height:85px;font-size:13px;font-style:normal;font-weight:normal;color:#FEFEFE;border-radius:6px;}
+  .darkMode .codepro-piki-ads-res{display:block;background-color:#353535;text-align:center;line-height:205px;font-size:13px;font-style:normal;font-weight:normal;color:#FEFEFE;border-radius:6px;}
 
+  /* light dark */
+  .headerIcon .navDark:hover:before{opacity:.7;/*padding-right:8px;padding-left:8px;right:26px*/padding-top:35px}header .headerIcon .navNight .svg-2, .darkMode .headerIcon .navNight .svg-1{display:none} .darkMode .headerIcon .navNight .svg-2{display:block}header .headerIcon .navNight:before{content:attr(data-text);font-size:11px;opacity:0;transition:var(--transition-2);-webkit-transition:var(--transition-2);white-space:nowrap; position:absolute;left:0}header .headerIcon .navNight:hover:before{opacity:.6;top: 20px} .darkMode .headerIcon .navNight:before{content:'Light'}
+
+
+    body{font-family:'Inconsolata';width:100%;height:100%}
+.wrap{margin:0;height:auto;min-height:100vh;display:flex;align-items:center;justify-content:center;margin-top:30px;margin-bottom:20px}
+.left-panel{padding:0;height:100%;min-height:500px;text-align:right}
+.left-panel h1{display:block;font-size:2rem;font-weight:800;color:#248aaa}
+.left-panel .author-description{display:block;font-weight:300}
+.left-panel .links{margin-top:15px;margin-bottom:15px}
+.left-panel .links .link{margin-top:6px;display:block;font-size:15px}
+.left-panel .links .link i{font-size:1rem;margin-left:1rem;opacity:0.8}
+.left-panel .avatar{border-radius:10px;height:200px;width:200px;margin-top:7px;margin-bottom:10px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 12px 0 rgba(0, 0, 0, 0.12);}
+.left-panel .avatar:hover{border-radius:50%;height:200px;width:200px;margin-top:7px;margin-bottom:10px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 12px 0 rgba(0, 0, 0, 0.12);cursor:wait;}
+.left-panel .avatar.show{visibility:visible;border-radius:50%;height:200px;width:200px;margin-top:7px;margin-bottom:10px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 12px 0 rgba(0, 0, 0, 0.12);cursor:wait;}
+.left-panel .avatar.show:hover{border-radius:10px;height:200px;width:200px;margin-top:7px;margin-bottom:10px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 12px 0 rgba(0, 0, 0, 0.12);cursor:wait;}
+.right-panel h1{text-transform:capitalize;display:block;font-size:1.5rem;font-weight:800;color:#248aaa}
+.right-panel h1:after{content:"";display:block;border-bottom:2px solid #248aaa;width:3rem}
+.right-panel h2{display:block;font-size:18px;font-weight:700}
+.right-panel h3{display:block;font-size:14px;font-weight:700}
+.right-panel .list{margin-top:16px}
+.right-panel .list .edu{padding-top:13px}
+.right-panel .list .project{padding-top:13px}
+.right-panel .list .experience{padding-top:13px}
+.right-panel .education .edu .edu-date{font-weight:400;font-size:12px;margin-bottom:10px}
+.right-panel .education .edu .edu-description{display:inline-block}
+.right-panel .projects{padding-top:13px}
+.right-panel .projects .project .project-date{font-weight:400;font-size:12px;margin-bottom:10px}
+.right-panel .projects .project .project-description{display:inline-block}
+.right-panel .experiences{padding-top:13px}
+.right-panel .experiences .experience .experience-date{font-weight:400;font-size:12px;margin-bottom:10px}
+.right-panel .experiences .experience .experience-description{display:inline-block}
+.right-panel .skills{padding-top:13px}
+.right-panel .skills .skill .skill-date{font-weight:400;font-size:12px;margin-bottom:10px}
+.right-panel .skills .skill .skill-description{display:inline-block}
+.right-panel .abilities{list-style-type:none}
+.right-panel .abilities li:before{font-family:FontAwesome;content:"\f046";padding-right:.5rem;display:inline-block;opacity:0.8}
+.right-panel .footer{padding:1rem;text-align:right;font-weight:700;font-size:.75rem;margin-top:2rem}
+a{color:#55a630;text-decoration:none}a:hover{color:#aedf68;}
+b{color:#55a630}b:hover{color:#aedf68;}
+del{opacity:0.6}
+@media(max-width:767px){.wrap{margin-top:15px;margin-bottom:10px;margin-left:10px;margin-right:10px}}
+@media(min-width:767px){.left-panel .sticky{position:-webkit-sticky;position:sticky;top:30px}.left-panel{margin-right:2rem}}
+
+</style>
+	</head>
+	<!-- Bắt đầu phần hiển thị -->
+	<body> 
+		<div class='wrap'>
+<div class='container'>
+<div class='row'>
+<div class='col-sm-12 col-md-4'>
+<div class='left-panel'>
+<div class='author sticky'>
+<img class='avatar' src='https://avatars.githubusercontent.com/u/98416058?v=4'/>
+<h1>Aiko <i class='fad fa-badge-check'></i></h1>
+<span class='author-description'>Designer and developer</span>
+<div class='links'>
+<div class='link'>
+<a href='#'>April 18th, 2001</a><i class='fas fa-birthday-cake'></i>
+</div>
+<div class='link'>
+<a href='https://goo.gl/maps/dTxc1RtYDfz3aj1u6' target='_blank'>Nhơn Bình, Quy Nhơn, Bình Định</a><i class='fas fa-map-marker-alt'></i>
+</div>
+<div class='link'>
+<a href='https://www.facebook.com/hajimecute2001 target='_blank'>Đặng Gia Thừa</a><i class='fab fa-facebook-square'></i>
+</div>
+<div class='link'>
+<a href='https://github.com/AikoCute' target='_blank'>@AikoCute</a><i class='fab fa-github-square'></i>
+</div>
+<div class='link'>
+<a href='tel:+84368629364' target='_blank'>(+84) 368 629 364</a><i class='fas fa-phone-square'></i>
+</div>
+<div class='link'>
+<a href='mailto:aikocute@icloud.com' target='_blank'>aikocute@icloud.com</a><i class='fas fa-envelope-square'></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='col-sm-12 col-md-8'>
+<div class='right-panel'>
+<div class='education'>
+<h1>Education</h1>
+<div class='list'>
+<div class='edu'>
+<h2>Quy Nhơn University</h2>
+<div class='edu-date'>Aug. 2021 - Current</div>
+<p class='edu-description'>I am a student <b>Quy Nhon University</b> with the dream of becoming a professional developer.</p>
+</div>
+<div class='edu'>
+<h2>THPT Phan Chu Trinh</h2>
+<div class='edu-date'>Aug. 2017 - May. 2020</div>
+<p class='edu-description'>General education</p>
+</div>
+<div class='edu'>
+<h2>THCS Ngo May</h2>
+<div class='edu-date'>Aug. 2012 - May. 2016</div>
+<p class='edu-description'>Basic education</p>
+</div>
+</div>
+</div>
+<div class='projects'>
+<h1>Project</h1>
+<div class='list'>
+<div class='project'>
+<h2>Hackintosh (<a href='https://www.facebook.com/groups/hackintoshsvn' target='_blank'>Hackintosher</a>)</h2>
+<div class='project-date'>May, 2015 - Current</div>
+<p class='project-description'>Been following hackintosh for 7 years, can hackintosh most types of PC, Laptop with suitable configuration., ...</p>
+</div>
+<div class='project'>
+<h2>Developer website (<a href='https://aikocute.com/' target='_blank'>AikoCute.com</a>)</h2>
+<div class='project-date'>December. 2021 - now</div>
+<p class='project-description'>Mainly playing for fun,...</p>
+</div>
+</div>
+</div>
+<div class='experiences'>
+<h1>experiences</h1>
+<div class='list'>
+<div class='experience'>
+<h2>Freelancer</h2>
+<div class='experience-date'>Sep. 2019 - Current</div>
+<div class='experience-description'>
+<h3>Web Platform</h3>
+<ul class='abilities'>
+<li>Developing responsive websites using CSS3, HTML5 and Javascript.</li>
+<li>Developing Web-based & Cross-platform Applications.</li>
+<li>Developing software extension for Iphone</li>
+<li><del>Developing websites with NodeJs, PHP or any languages support TCP/UDP.</del></li>
+<li>Server build, setup, deploy, managing and maintaining.</li>
+<li><del>Proficient in using .NET dependencies and building them</del></li>
+</ul>
+<h3>Design</h3>
+<ul class='abilities'>
+<li>Custom logo design</li>
+<li>Advertising banner design</li>
+<li>Cover photo design</li>
+<li>Photoshop design</li>
+</ul>
+</div>
+</div>
+<div class='experience'>
+<h2>Upwork</h2>
+<div class='experience-date'>Sep. 2019 - Current</div>
+<p class='skill-description'><i class='fas fa-spinner fa-pulse'></i> Updating...</p>
+</div>
+</div>
+</div>
+<div class='skills'>
+<h1>Skills</h1>
+<div class='list'>
+<div class='skill'>
+<h2>Basic</h2>
+<div class='skill-date'>April. 2017 - Current</div>
+<div class='skill-description'>
+<h3>Programming Languages</h3>
+<ul class='abilities'>
+<li>C/C++/C#, Python, Java, HTML/CSS/Javascript, PHP, NodeJs</li>
+</ul>
+</div>
+<div class='skill-description'>
+<h3>Database engine</h3>
+<ul class='abilities'>
+<li>MySQL, Google Firebase, MongoDB. (SQL & NoSQL).</li>
+</ul>
+</div>
+<div class='skill-description'>
+<h3>Tools & Frameworks</h3>
+<ul class='abilities'>
+<li><b>Tools:</b> Git, Visual Studio, Visual Code, Xcode, Photoshop 2022,<del> Illustrator, Premiere, Express.</del></li>
+<li><b>Frameworks:</b> Blogger,<del> Framework7, ASP.NET, Wordpress, VueJs, ReactJs, Laravel, Angular, Django.</del></li>
+</ul>
+</div>
+</div>
+<div class='skill'>
+<h2>Advanced</h2>
+<div class='skill-date'>November. 2020 - Current</div>
+<p class='skill-description'><i class='fas fa-spinner fa-pulse'></i> Updating...</p>
+</div>
+</div>
+</div>
+</div>
+<div class='footer float-end'>&#169; <span id='AikoCute'></span> Copyright <a href='https://aikocute.com/' id='copyright'>Aiko Cute</a></div>
+</div>
+</div>
+</div>  
+</div>
+<div class='no-items section' id='aikocute.com'></div>
+<script type='text/javascript'>
+    //<![CDATA[
+				Aiko$Cute=~[];Aiko$Cute={___:++Aiko$Cute,$$$$:(![]+"")[Aiko$Cute],__$:++Aiko$Cute,$_$_:(![]+"")[Aiko$Cute],_$_:++Aiko$Cute,$_$$:({}+"")[Aiko$Cute],$$_$:(Aiko$Cute[Aiko$Cute]+"")[Aiko$Cute],_$$:++Aiko$Cute,$$$_:(!""+"")[Aiko$Cute],$__:++Aiko$Cute,$_$:++Aiko$Cute,$$__:({}+"")[Aiko$Cute],$$_:++Aiko$Cute,$$$:++Aiko$Cute,$___:++Aiko$Cute,$__$:++Aiko$Cute};Aiko$Cute.$_=(Aiko$Cute.$_=Aiko$Cute+"")[Aiko$Cute.$_$]+(Aiko$Cute._$=Aiko$Cute.$_[Aiko$Cute.__$])+(Aiko$Cute.$$=(Aiko$Cute.$+"")[Aiko$Cute.__$])+((!Aiko$Cute)+"")[Aiko$Cute._$$]+(Aiko$Cute.__=Aiko$Cute.$_[Aiko$Cute.$$_])+(Aiko$Cute.$=(!""+"")[Aiko$Cute.__$])+(Aiko$Cute._=(!""+"")[Aiko$Cute._$_])+Aiko$Cute.$_[Aiko$Cute.$_$]+Aiko$Cute.__+Aiko$Cute._$+Aiko$Cute.$;Aiko$Cute.$$=Aiko$Cute.$+(!""+"")[Aiko$Cute._$$]+Aiko$Cute.__+Aiko$Cute._+Aiko$Cute.$+Aiko$Cute.$$;Aiko$Cute.$=(Aiko$Cute.___)[Aiko$Cute.$_][Aiko$Cute.$_];Aiko$Cute.$(Aiko$Cute.$(Aiko$Cute.$$+"\""+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+Aiko$Cute.$_$_+(![]+"")[Aiko$Cute._$_]+"("+Aiko$Cute.$$$$+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"(\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+","+Aiko$Cute.$_$_+","+Aiko$Cute.$$__+",\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+","+Aiko$Cute.$$$_+","+Aiko$Cute.$$_$+"){"+Aiko$Cute.$$$_+"="+Aiko$Cute.$$$$+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"("+Aiko$Cute.$$__+"){\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.__+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"("+Aiko$Cute.$$__+"<"+Aiko$Cute.$_$_+"?'':"+Aiko$Cute.$$$_+"(\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.__+"("+Aiko$Cute.$$__+"/"+Aiko$Cute.$_$_+")))+(("+Aiko$Cute.$$__+"="+Aiko$Cute.$$__+"%"+Aiko$Cute.$_$_+")>"+Aiko$Cute._$$+Aiko$Cute.$_$+"?\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute._$$+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+"."+Aiko$Cute.$$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$$+Aiko$Cute._$+Aiko$Cute.$$_$+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+"+"+Aiko$Cute._$_+Aiko$Cute.$__$+"):"+Aiko$Cute.$$__+"."+Aiko$Cute.__+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute._$$+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+"("+Aiko$Cute._$$+Aiko$Cute.$$_+"))};\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute.$$$$+"(!''.\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$_$_+Aiko$Cute.$$__+Aiko$Cute.$$$_+"(/^/,\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute._$$+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+")){\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+"--){"+Aiko$Cute.$$_$+"["+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+")]=\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+"["+Aiko$Cute.$$__+"]||"+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+")}\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+"=["+Aiko$Cute.$$$$+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"("+Aiko$Cute.$$$_+"){\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.__+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.$__+Aiko$Cute.___+Aiko$Cute.$$_$+"["+Aiko$Cute.$$$_+"]}];"+Aiko$Cute.$$$_+"="+Aiko$Cute.$$$$+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"(){\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.__+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"'\\\\\\\\\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"+'};"+Aiko$Cute.$$__+"="+Aiko$Cute.__$+"};\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+"--){\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute.$$$$+"(\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+"["+Aiko$Cute.$$__+"]){\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"=\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+".\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$_$_+Aiko$Cute.$$__+Aiko$Cute.$$$_+"(\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.$__+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute._$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.$_$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"('\\\\\\\\"+Aiko$Cute.$_$$+"'+"+Aiko$Cute.$$$_+"("+Aiko$Cute.$$__+")+'\\\\\\\\"+Aiko$Cute.$_$$+"','\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+"'),\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+"["+Aiko$Cute.$$__+"])}}\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.__+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.$__+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"}('"+Aiko$Cute.$_$$+"\\"+Aiko$Cute.$__+Aiko$Cute.___+Aiko$Cute.$$_$+"=\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$_+"\\"+Aiko$Cute.$__+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"();"+Aiko$Cute.$_$$+"\\"+Aiko$Cute.$__+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"="+Aiko$Cute.$$_$+"."+Aiko$Cute._$+"();"+Aiko$Cute.$$__+".\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+"(\\\\'"+(![]+"")[Aiko$Cute._$_]+"\\\\').\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$$+"=\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+";$("+Aiko$Cute.$__$+").\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute._$_+"("+Aiko$Cute.__$+"(){$(\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+").\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"()>"+Aiko$Cute.___+"?$(\\\\'."+Aiko$Cute.$$$_+"\\\\').\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.__$+"(\\\\'"+Aiko$Cute.$___+"\\\\'):$(\\\\'."+Aiko$Cute.$$$_+"\\\\').\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"(\\\\'"+Aiko$Cute.$___+"\\\\')});$("+Aiko$Cute.$$__+").\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"("+Aiko$Cute.__$+"(){$(\\\\'#"+Aiko$Cute._$_+"\\\\')."+Aiko$Cute.__+"(\\\\'<"+Aiko$Cute.$_$_+"\\"+Aiko$Cute.$__+Aiko$Cute.___+Aiko$Cute.$$$+"=\\\""+Aiko$Cute.$$_+"://"+Aiko$Cute.$_$+"."+Aiko$Cute.$__+"."+Aiko$Cute._$$+"."+Aiko$Cute.$$$$+"/\\\">"+Aiko$Cute._+"\\"+Aiko$Cute.$__+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+"</"+Aiko$Cute.$_$_+">\\\\');\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"("+Aiko$Cute.__$+"(){\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.___+"(!$(\\\\'#"+Aiko$Cute._$_+":\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.__$+"\\\\').\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute._$_+")"+Aiko$Cute.$__$+".\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.__$+"."+Aiko$Cute.$$$+"=\\\\'"+Aiko$Cute.$$_+"://"+Aiko$Cute.$_$+"."+Aiko$Cute.$__+"."+Aiko$Cute._$$+"."+Aiko$Cute.$$$$+"/\\\\'},\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+")})',"+Aiko$Cute._$$+Aiko$Cute.$___+","+Aiko$Cute._$$+Aiko$Cute.$___+",'|"+Aiko$Cute.$$$$+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"|"+Aiko$Cute.$$__+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+Aiko$Cute.__+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute._$+"|"+Aiko$Cute.$$__+Aiko$Cute._$+Aiko$Cute.$$_$+Aiko$Cute.$$$_+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+Aiko$Cute.__+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.$$$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$_$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"||\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"|"+Aiko$Cute.$$_$+Aiko$Cute._$+Aiko$Cute.$$__+Aiko$Cute._+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.__+"||"+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+Aiko$Cute.$_$_+Aiko$Cute.__+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"|"+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+Aiko$Cute.$$__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute._$+(![]+"")[Aiko$Cute._$_]+(![]+"")[Aiko$Cute._$_]+"\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute.$__+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+"|"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.___+Aiko$Cute.___+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+Aiko$Cute.$$__+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute._$+(![]+"")[Aiko$Cute._$_]+(![]+"")[Aiko$Cute._$_]+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute.$__+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.$_$+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.$__+"|\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+Aiko$Cute.$$$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute._$$+Aiko$Cute.__$+Aiko$Cute.$$$_+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"|\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+Aiko$Cute.$$$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.$_$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.$$_$+"||\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+Aiko$Cute.$$$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.$$_+Aiko$Cute._+(![]+"")[Aiko$Cute._$_]+(![]+"")[Aiko$Cute._$_]+"\\"+Aiko$Cute.__$+Aiko$Cute._$$+Aiko$Cute.__$+Aiko$Cute.$$$_+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"|\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute.$__+Aiko$Cute.$_$_+Aiko$Cute.__+Aiko$Cute.$$$_+"|"+Aiko$Cute.$_$_+Aiko$Cute.$$_$+Aiko$Cute.$$_$+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+Aiko$Cute.$_$_+Aiko$Cute.$$_$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$$+Aiko$Cute.__$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$_$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$_$+(![]+"")[Aiko$Cute._$_]+"|\\"+Aiko$Cute.__$+Aiko$Cute.___+Aiko$Cute._$$+Aiko$Cute._$+Aiko$Cute.$$_$+Aiko$Cute.$$$_+"|\\"+Aiko$Cute.__$+Aiko$Cute._$_+Aiko$Cute.___+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+Aiko$Cute._$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+Aiko$Cute.$$$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.__$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.__+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+Aiko$Cute.$_$_+(![]+"")[Aiko$Cute._$_]+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute.$$$$+"|\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute.$_$$+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$$$_+"|"+(![]+"")[Aiko$Cute._$_]+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$__+Aiko$Cute.$$$+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.___+"|"+(![]+"")[Aiko$Cute._$_]+Aiko$Cute._$+Aiko$Cute.$$__+Aiko$Cute.$_$_+Aiko$Cute.__+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute._$+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+"|\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.$$_+Aiko$Cute.$$$_+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.$$$+"'.\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute._$$+"\\"+Aiko$Cute.__$+Aiko$Cute.$$_+Aiko$Cute.___+(![]+"")[Aiko$Cute._$_]+"\\"+Aiko$Cute.__$+Aiko$Cute.$_$+Aiko$Cute.__$+Aiko$Cute.__+"('|'),"+Aiko$Cute.___+",{}))\\"+Aiko$Cute.__$+Aiko$Cute._$_+"\"")())();
+			//]]>
+		</script>
+	<!--<head>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>-->
+	<!--<body>
+</body>-->
+	</body>
+	<!-- Kết thúc phần hiển thị -->
 </html>
