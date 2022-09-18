@@ -4,7 +4,7 @@
 </em></p>
 
 [![](https://img.shields.io/badge/MyZalo-@AikoCuteZalo-blue.svg)](https://zalo.me/0368629364)
-[![](https://img.shields.io/badge/MyTele-@AikocuteTele-blue.svg)](https://t.me/AikoCute_Player)
+[![](https://img.shields.io/badge/MyTele-@AikocuteTele-blue.svg)](https://t.me/AikoCute)
 
 
 
