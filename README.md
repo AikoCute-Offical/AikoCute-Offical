@@ -34,7 +34,7 @@
 ![](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat-square&logo=Adobe-Photoshop&logoColor=ffffff)
 
 
-![Aiko's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AikoCute-Offical&layout=compact)
-![Aiko's Github Stats](https://github-readme-stats.vercel.app/api?username=AikoCute-Offical&show_icons=true&icon_color=0366d6&bg_color=ffffff&hide_title=true&include_all_commits=true&count_private=true)
+![Aiko's github stats](https://github-readme-stats.vercel.app/api?username=AikoCute-Offical&show_icons=true&count_private=true&hide=stars)
+![Aiko's Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AikoCute-Offical&layout=compact)
 
 ---
